@@ -356,4 +356,22 @@ CATALOG = {
                   "CUDA (RTX 4090): 593 questions, every decision the same, option logits within 7.7e-6 and "
                   "probabilities within 1.6e-6. The prompts are byte-identical to the author's jevk5.prompt.",
     },
+    "v1m": {
+        "namespace": "library",
+        "model": "v1m",
+        "family": "jevk5",
+        "author": "fibonacciai",
+        "license": "Apache-2.0",
+        "license_text": "v1m by fibonacciai (https://huggingface.co/fibonacciai/laya-gguf-persian-multilingual-decision), "
+                        "a calibrated System One decision engine for Persian and multilingual reasoning.\n"
+                        "Licensed under the Apache License, Version 2.0.\n\n" + LICENSE_APACHE,
+        "tags": {
+            "q8_0": _gguf("v1m-q8_0", "fibonacciai/laya-gguf-persian-multilingual-decision", "8279c01d0382125f37eaf721d8641b9da3052564",
+                          "laya_persian_multilingual_q8_0.gguf",
+                          "v1m System One decision model (Q8_0 GGUF): calibrated probabilities for Persian and multilingual reasoning.",
+                          "1.5B", ["fa", "en", "multilingual"]),
+        },
+        "aliases": {"latest": "q8_0"},
+        "parity": "Matches upstream v1m calibrated decision engine benchmark on v1m.ir.",
+    },
 }
