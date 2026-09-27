@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 2,
+  "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+  "config": {
+    "mediaType": "application/vnd.ollaya.config.v1+json",
+    "digest": "sha256:5453c62f73e9b192d5252c896fd23dcb5c4c1933ae74a62e99e604a1c8ed46b0",
+    "size": 550,
+    "urls": [
+      "https://ollaya.dev/blobs/sha256-5453c62f73e9b192d5252c896fd23dcb5c4c1933ae74a62e99e604a1c8ed46b0"
+    ]
+  },
+  "layers": [
+    {
+      "mediaType": "application/vnd.ollaya.weights.gguf",
+      "digest": "sha256:757c1a4b1f0f41824113dde76d6cd06b0881d37b796103a338de77f9f9b935c3",
+      "size": 361712736,
+      "urls": [
+        "https://huggingface.co/fibonacciai/laya-gguf-persian-multilingual-decision/resolve/8279c01d0382125f37eaf721d8641b9da3052564/laya_persian_multilingual_q8_0.gguf"
+      ],
+      "annotations": {
+        "org.ollaya.quantization": "Q8_0"
+      }
+    },
+    {
+      "mediaType": "application/vnd.ollaya.decision",
+      "digest": "sha256:607df0e4fa897b21712164c414ff0cb533d1eaf1890f6bfe51f9f7f7c96d709e",
+      "size": 1324,
+      "urls": [
+        "https://ollaya.dev/blobs/sha256-607df0e4fa897b21712164c414ff0cb533d1eaf1890f6bfe51f9f7f7c96d709e"
+      ]
+    },
+    {
+      "mediaType": "application/vnd.ollaya.calibration",
+      "digest": "sha256:383a43e311d4f4328a4ac02fdb0014bdbaed57768bf0d03fad5040a9e072e8fc",
+      "size": 197,
+      "urls": [
+        "https://ollaya.dev/blobs/sha256-383a43e311d4f4328a4ac02fdb0014bdbaed57768bf0d03fad5040a9e072e8fc"
+      ]
+    },
+    {
+      "mediaType": "application/vnd.ollaya.license",
+      "digest": "sha256:8e946530c46d5078253321d71a227e5e4a943240ba735c0ff3e30edf23737425",
+      "size": 10458,
+      "urls": [
+        "https://ollaya.dev/blobs/sha256-8e946530c46d5078253321d71a227e5e4a943240ba735c0ff3e30edf23737425"
+      ]
+    }
+  ]
+}
