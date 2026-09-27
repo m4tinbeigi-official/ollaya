@@ -360,16 +360,16 @@ CATALOG = {
         "namespace": "library",
         "model": "v1m",
         "family": "laya",
-        "author": "fibonacciai",
+        "author": "M4tinBeigi",
         "license": "Apache-2.0",
-        "license_text": "v1m by fibonacciai (https://huggingface.co/fibonacciai/laya-gguf-persian-multilingual-decision), "
+        "license_text": "v1m by M4tinBeigi (https://huggingface.co/M4tinBeigi/v1m-persian-decision), "
                         "licensed under the Apache License, Version 2.0.\n\n" + LICENSE_APACHE,
         "description": "v1m System One decision model: calibrated probabilities for Persian and multilingual reasoning.",
         "tags": {
             "latest": {
-                "repo": "fibonacciai/laya-gguf-persian-multilingual-decision",
-                "commit": "8279c01d0382125f37eaf721d8641b9da3052564",
-                "weights": "model.safetensors",
+                "repo": "M4tinBeigi/v1m-persian-decision",
+                "commit": "480c0cffba274b39c49a49d95c24d428a161bda2",
+                "weights": "model.onnx",
                 "tokenizer": "tokenizer.json",
                 "prefix": "model.",
                 "exports": {
@@ -379,7 +379,7 @@ CATALOG = {
                 "parameter_size": "322M",
                 "context_length": 1024,
                 "languages": ["fa", "en", "multilingual"],
-                "description": "v1m System One decision model (mmBERT-base): calibrated probabilities for Persian and multilingual reasoning.",
+                "description": "v1m System One decision model (mmBERT-base ONNX): calibrated probabilities for Persian and multilingual reasoning.",
             },
         },
         "parity": "Matches upstream reference implementation on Persian and multilingual benchmark scenarios.",
