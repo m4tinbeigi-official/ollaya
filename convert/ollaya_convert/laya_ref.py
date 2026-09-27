@@ -18,6 +18,7 @@ CHECKPOINTS = {
     "en": None,
     "multilingual": "multilingual",
     "typed-decisions": "typed-decisions",
+    "v1m": "multilingual",
 }
 
 DEFAULT_ROOT = os.environ.get("LAYA_ROOT", os.path.expanduser("~/models/laya"))

@@ -26,6 +26,8 @@ STATES = {
     "ar_complaint": "تم خصم المبلغ مرتين من بطاقتي، أريد استرداد أموالي فوراً وإلا سألغي الاشتراك.",
     "zh_bug": "登录页面一直报错 500，我们下午两点要演示，请尽快处理。",
     "de_cancel": "Wir möchten unser Abo zum Monatsende kündigen. Bitte bestätigen Sie die Kündigung schriftlich.",
+    "fa_complaint": "سلام، دو بار از حساب من مبلغ کسر شده و اشتراک هم فعال نشده. لطفا سریع‌تر پیگیری و مبلغ را بازگردانید.",
+    "fa_intent": "چطور می‌تونم پلن ماهانه خودم رو به سالانه ارتقا بدم و آیا تخفیفی برای خرید عمده وجود داره؟",
     "email_dict": {"from": "user@acme.com", "subject": "Duplicate charge on invoice #4411",
                    "body": "Hi, we were billed twice for March. Please refund the duplicate today or we will cancel."},
     "conversation": [{"role": "user", "content": "My order never arrived."},
