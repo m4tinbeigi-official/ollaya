@@ -6,9 +6,9 @@ It uses an encoder-based architecture (mmBERT) with specialized sequence markers
 
 | | `v1m` |
 |---|---|
-| Upstream | [M4tinBeigi/v1m-persian-decision](https://huggingface.co/M4tinBeigi/v1m-persian-decision) @ `480c0cffba274b39c49a49d95c24d428a161bda2` |
+| Upstream | [M4tinBeigi/v1m-persian-decision](https://huggingface.co/M4tinBeigi/v1m-persian-decision) @ `d3b2a3d7bb6df023993d6a4e9ada07cde36da3a6` |
 | Source Code | [m4tinbeigi-official/v1m-persian-decision](https://github.com/m4tinbeigi-official/v1m-persian-decision) |
-| Architecture | Encoder-based decision head (mmBERT-base, ONNX Runtime) |
+| Architecture | Encoder-based decision head (mmBERT-base, Laya family) |
 | Parameters | 322M (fp32 / fp16) |
 | Context length | 1024 tokens |
 | Languages | Persian (`fa`), English (`en`), Multilingual |
@@ -19,9 +19,10 @@ It uses an encoder-based architecture (mmBERT) with specialized sequence markers
 
 | File | Source |
 |---|---|
-| `model.onnx` (325 MB) | [Hugging Face](https://huggingface.co/M4tinBeigi/v1m-persian-decision/resolve/main/model.onnx) / [v1m.ir](https://v1m.ir/static/models/v1m/model.onnx) |
-| `tokenizer.json` (34 MB) | [Hugging Face](https://huggingface.co/M4tinBeigi/v1m-persian-decision/resolve/main/tokenizer.json) / [v1m.ir](https://v1m.ir/static/models/v1m/tokenizer.json) |
-| `rl_agent_config.json` | [Hugging Face](https://huggingface.co/M4tinBeigi/v1m-persian-decision/resolve/main/rl_agent_config.json) / [v1m.ir](https://v1m.ir/static/models/v1m/rl_agent_config.json) |
+| `multilingual/model.safetensors` | Upstream PyTorch weights @ commit `d3b2a3d7` |
+| `multilingual/encoder/config.json` | ModernBERT/mmBERT encoder config |
+| `multilingual/tokenizer/tokenizer.json` | Upstream multilingual tokenizer |
+| `multilingual/rl_agent_config.json` | Calibrated RL agent config with temperature vector |
 
 ## Usage with Ollaya
 

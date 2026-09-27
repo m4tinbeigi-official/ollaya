@@ -368,9 +368,10 @@ CATALOG = {
         "tags": {
             "latest": {
                 "repo": "M4tinBeigi/v1m-persian-decision",
-                "commit": "480c0cffba274b39c49a49d95c24d428a161bda2",
-                "weights": "model.onnx",
-                "tokenizer": "tokenizer.json",
+                "commit": "d3b2a3d7bb6df023993d6a4e9ada07cde36da3a6",
+                "weights": "multilingual/model.safetensors",
+                "tokenizer": "multilingual/tokenizer/tokenizer.json",
+                "checkpoint": os.path.join(DEFAULT_ROOT, "multilingual", "model.safetensors"),
                 "prefix": "model.",
                 "exports": {
                     "fp32": os.path.join(OUT, "v1m"),
@@ -379,7 +380,12 @@ CATALOG = {
                 "parameter_size": "322M",
                 "context_length": 1024,
                 "languages": ["fa", "en", "multilingual"],
-                "description": "v1m System One decision model (mmBERT-base ONNX): calibrated probabilities for Persian and multilingual reasoning.",
+                "description": "v1m System One decision model (fine-tuned mmBERT-base): calibrated probabilities for Persian and multilingual reasoning.",
+                "arch": {
+                    "family": "laya",
+                    "config": "multilingual/encoder/config.json",
+                    "agent_config": "multilingual/rl_agent_config.json"
+                },
             },
         },
         "parity": "Matches upstream reference implementation on Persian and multilingual benchmark scenarios.",
